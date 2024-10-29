@@ -1,0 +1,131 @@
+@import 'common.scss';
+
+.home-section{
+    background-color: $bg-light; @include paddingX40(); text-align: center;
+    h2{ font-size: px-to-rem(30); font-weight: bold; @include mB40(); }
+    h3{ font-size: px-to-rem(16); @include mB40(); @include w760(); }
+    .sections{
+        display: flex; gap: 30px; flex-wrap: wrap; justify-content: center;
+        .sec{ flex: 0 0  calc(100% / 3 - 30px); transition: 0.3s; 
+          @include media-max(md) { flex: 0 0  calc(100% / 2 - 30px);}
+          @include media-max(xs) {flex: 0 0  calc(100% - 30px);}
+            img{ border: 1px solid $clr-black; margin-bottom: 30px; width: 100%; }
+            .title{
+                line-height: px-to-rem(40); border: 1px solid $clr-white; border-radius: 10px; text-transform: uppercase; font-weight: 600;
+                background-color: $clr-white; box-shadow: 8px 9px 10px #d5d4d4; cursor: pointer;
+            }
+            
+        }
+        
+        // &:has(.sec:hover) .sec:not(:hover){
+        //     filter: blur(4px);
+        // }
+    }
+}
+
+.video-boost{
+    background-color: $bg-dark; text-align: center; color: $clr-white; @include paddingX100();
+    .title{
+        @include title();
+        .highlight{ color: $primary; }
+    }
+    .description{  @include w760(); }
+}
+
+.image-sections{
+    @include paddingX100();
+    @include media-max(md) { @include paddingX40()}
+    .image-wrapper{
+        overflow: hidden; border: 1px solid $clr-black;
+        img{   transition: 0.3s; transform: none; }
+        &:hover img{
+            transform: scale(1.2)rotate(5deg);
+        }
+    }
+    
+    .section{ 
+        display: flex; gap: 20px; padding: 0 15px;
+        .sub-section{
+            display: flex; gap: 20px; flex-direction: column;
+            .sub-section2{ display: flex; gap: 20px; }
+        }
+        & + .section{ margin-top: 20px; }
+    }
+}
+
+.about-us{
+  background-color: $bg-dark; color: $clr-white; @include paddingX100(); text-align: center;
+  @include media-max(md) {@include paddingX40();}
+  .title{ @include title(); }
+  .description-video{ display: flex; gap: 40px;
+    @include media-max(md) { display: block;}
+    .counters{
+      display: flex; gap: 40px; justify-content: center; margin-bottom: 50px; color: $primary; font-size: px-to-rem(40); font-weight: 600; line-height: 1.2;
+      @include media-max(md) {  font-size: px-to-rem(20); margin-bottom: 20px;}
+      .text{ font-size: px-to-rem(28); 
+        @include media-max(md) {  font-size: px-to-rem(18);}
+      }
+    }
+    .data{ text-align: left; margin-bottom: 50px; }
+    .schedule-btn{ 
+      background-color: $primary; transition: 0.3s; color: $clr-white; padding: 20px 30px; font-size: px-to-rem(20); font-weight: 600; border-radius: 10px;  
+      &:hover{
+        color: $primary; transition: 0.3s; background-color: $clr-white;
+      }
+    }
+    iframe{ border-radius: 10px; 
+      @include media-max(md) { margin: 20px auto;}
+    }
+
+  }
+}
+.contact-us{
+  background-color: #fef9f5;  @include paddingX80();
+  @include media-max(md) {@include paddingX40();}
+  .contac-section{
+    margin: 0 auto;  width: 40%; background-color: #31314d; border-radius: 10px;
+    @include media-max(md)  { width: auto; margin: 0 15px;} 
+    .inner-section{
+      color: $clr-white;text-align: center;
+      .title{ font-size: 1.5rem; border-bottom: 0.5px solid #e1e1e1; padding: 15px 30px 10px 40px; display: inline-block; font-weight: 500;}
+      .sub-title{font-style: italic;}
+      p{padding: 5px 60px;}
+    }
+    .contFrm{
+      padding: 10px 30px;
+      .row{display: flex; flex-wrap: wrap;}
+      .col-sm-6{max-width: 50%; flex: 0 0 50%; padding: 0 15px;
+        @include media-max(xs) {max-width: 100%; flex: 0 0 100%;}
+      }
+      .col-12{max-width: 100%; flex: 0 0 100%;padding: 0 15px}
+      .inptFld{
+        border-radius: 2px; padding: 10px; margin-bottom: 15px; width: 100%;
+      }
+      textarea{width: 100%;}
+      .schedule-btn{ 
+        background-color: $primary; transition: 0.3s; color: $clr-white; padding: 6px 30px; font-size: px-to-rem(20); font-weight: 600; border-radius: 5px;  
+        @include media-max(md) {padding: 6px 15px;}
+        &:hover{
+          color: $primary; transition: 0.3s; background-color: $clr-white;
+        }
+      }
+    }
+  }
+
+}
+.testimonials{
+  background-color: #f0f0f0; @include paddingX80(); margin-bottom: 100px; text-align: center;
+  @include media-max(md) {@include paddingX40(); margin-bottom: 40px}
+  .title{ @include title();}
+  .description{ @include w760(); @include mB40(); }
+  .card{
+    display: flex; gap: 35px; text-align: left; align-items: center;
+    .review-details{
+      display: flex; gap: 10px; flex-direction: column;
+      .name{ font-weight: 600; text-transform: capitalize; font-size: px-to-rem(20);}
+      .ratings{ 
+        display: flex; gap: 5px; color: $primary;
+      }
+    }
+  }
+}
