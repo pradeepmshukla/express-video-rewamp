@@ -13,7 +13,7 @@ export default function Home() {
       <VideoBoost />
       <ImageSections />
       <AboutUs />      
-      <Testimonials />
+      <Testimonials data="2"/>
 
     </>
   );
