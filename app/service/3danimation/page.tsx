@@ -1,4 +1,4 @@
-import TwoDSection from "../../components/services/3danimation/service";
+import TwoDSection from "../../components/services/3danimation/Service";
 import Banner from "../../components/services/3danimation/banner";
 import VideoServices from "../../components/services/3danimation/VideoService"
 import "../../scss/home.scss";
