@@ -16,7 +16,7 @@ const Header = () => {
       <div className="container-fluid px-6 md:px-16 py-4 mx-auto flex items-center justify-between uppercase font-semibold">
         
         <div className="logo-text-wrapper flex gap-4 items-center justify-center">
-          <Image width="179" height="64" alt="logo" src="/header_logo.png" />
+         <Link href={"/"}><Image width="179" height="64" alt="logo" src="/header_logo.png" /></Link> 
         </div>
 
         <div className="quick-links hidden md:flex items-center">

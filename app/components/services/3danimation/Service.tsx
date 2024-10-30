@@ -1,60 +1,50 @@
 "use client";
 import ToggleText from "@/app/utils/ToggleText";
 import Image from "next/image";
-import Link from "next/link";
 
-const Section = () => {
+const TwoDSection = () => {
   const data = [
     {
       imageUrl: "/home/animation-img/portrait-man-cartoon-style.jpg",
       title: "2d animation",
-      url:"/service/2danimation"
     },
     {
       imageUrl: "/home/animation-img/portrait-man-cartoon-style.jpg",
       title: "3d animation",
-      url:"/service/3danimation"
     },
     {
       imageUrl: "/home/animation-img/3d product.jpeg",
       title: "3d product video",
-      url:"/service/3danimation"
     },
     {
       imageUrl: "/home/animation-img/motion graphic.jpg",
       title: "explainer video",
-      url:"/service/3danimation"
     },
     {
       imageUrl: "/home/animation-img/portrait-man-cartoon-style.jpg",
       title: "motion graphic videos",
-      url:"/service/3danimation"
     },
     {
       imageUrl: "/home/animation-img/portrait-man-cartoon-style.jpg",
       title: "whiteboard animation",
-      url:"/service/3danimation"
     },
     {
       imageUrl: "/home/animation-img/portrait-man-cartoon-style.jpg",
       title: "business promotional videos",
-      url:"/service/3danimation"
     },
     {
       imageUrl: "/home/animation-img/E-Learning.jpg",
       title: "e-learning videos",
-      url:"/service/3danimation"
     },
     {
       imageUrl: "/home/animation-img/design.jpg",
       title: "design services",
-      url:"/service/3danimation"
     },
   ];
   return (
     <div className="wrapper home-section">
       <div className="container">
-        <h2>Animation Video Services</h2>
+        <h2>3d Animation Video</h2>
         <h3>
           <ToggleText
             text="In publishing and graphic design, Lorem ipsum is a placeholder text
@@ -74,13 +64,20 @@ const Section = () => {
                 width={355}
                 height={225}
               />
-              <div className="title"><Link href={x.url}>{x.title}</Link></div>
             </div>
           ))}
+        </div>
+        <div className="bootm">
+            <button className="btn">
+            Explore more 3D animation videos
+            </button>
+            <p>
+            <span>Click on the above button </span>.Fill your requirements and explor more such 3D animations right for your business growth
+            </p>
         </div>
       </div>
     </div>
   );
 };
 
-export default Section;
+export default TwoDSection;

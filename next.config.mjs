@@ -8,6 +8,16 @@ const nextConfig = {
               hostname: "dummyimage.com"
           }
       ]
+  },
+
+  redirects: async()=>{
+    return[
+        {
+            source:"/service",
+            destination:'/service/2danimation',
+            permanent:true
+        }
+    ]
   }
 };
 
