@@ -16,10 +16,8 @@ const AboutUs = () => {
               </div>
             </div>
             <div className="data">
-              In publishing and graphic design, Lorem ipsum is a placeholder
-              text commonly used to demonstrate the visual form of a document or
-              a typeface without relying on meaningful content. Lorem ipsum may
-              be used as a placeholder before the final copy is available.
+              About Us
+              Specializing in custom animated videos and explainer video production, we bring ideas to life with captivating visuals that enhance your brand message. Our clients rely on us for high-quality animation services tailored to their unique needs, whether for marketing, corporate communication, or product demonstrations. We are your trusted partner for affordable animation solutions that drive results.
             </div>
             <button className="schedule-btn">Schedule a call now</button>
           </div>

@@ -30,8 +30,8 @@ const Header = () => {
             </button>
             {servicesOpen && (
               <div className="dropdown absolute top-8 left-0 bg-white shadow-lg py-2 rounded-md z-10">
-                <Link href="/service" className="block px-4 py-2 hover:bg-gray-100">Service </Link>
-                <Link href="/service1" className="block px-4 py-2 hover:bg-gray-100">Service 1</Link>
+                <Link href="/service/2danimation" className="block px-4 py-2 hover:bg-gray-100">2D Animation</Link>
+                <Link href="/service/3danimation" className="block px-4 py-2 hover:bg-gray-100">3D Animation</Link>
                 <Link href="/service2" className="block px-4 py-2 hover:bg-gray-100">Service 2</Link>
               </div>
             )}

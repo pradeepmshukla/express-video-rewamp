@@ -7,15 +7,16 @@ const ImageSections = () => {
         <div className="section">
           <div className="image-wrapper border-radius-15">
             <Image
-              src="/home/section/broad-audience.png"
+              src="/assets/home/boost/01.png"
               alt="broad audience reach"
               width="655"
               height="300"
+              className=" "
             />
           </div>
           <div className="image-wrapper border-radius-15">
             <Image
-              src="/home/section/brand-boost01.jpg"
+              src="/assets/home/boost/02.png"
               alt="social share"
               width="465"
               height="300"
@@ -26,7 +27,7 @@ const ImageSections = () => {
           <div className="sub-section">
             <div className="image-wrapper border-radius-15">
               <Image
-                src="/home/section/brand-boost01.jpg"
+                src="/assets/home/boost/03.png"
                 alt="increase engagement"
                 width="556"
                 height="300"
@@ -35,7 +36,7 @@ const ImageSections = () => {
             <div className="sub-section2">
               <div className="image-wrapper border-radius-15">
                 <Image
-                  src="/home/section/131850a4-e84a-4149-a484-53dcf5f97271.jpg"
+                   src="/assets/home/boost/04.png"
                   alt="magnet"
                   width="266"
                   height="300"
@@ -43,7 +44,7 @@ const ImageSections = () => {
               </div>
               <div className="image-wrapper border-radius-15">
                 <Image
-                  src="/home/section/66858e54-5708-4a96-b08b-64b9ff65c7a4.png"
+                  src="/assets/home/boost/05.png"
                   alt="share"
                   width="268"
                   height="300"
@@ -53,7 +54,7 @@ const ImageSections = () => {
           </div>
           <div className="image-wrapper border-radius-15">
             <Image
-              src="/home/section/higher-conversion.jpg"
+              src="/assets/home/boost/06.png"
               alt="boost brand awareness"
               width="552"
               height="620"
