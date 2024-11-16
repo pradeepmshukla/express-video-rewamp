@@ -2,67 +2,16 @@
 import ToggleText from "@/app/utils/ToggleText";
 import Image from "next/image";
 import Link from "next/link";
+import { db } from "@/app/utils/db";
 
 const Section = () => {
-  const data = [
-    {
-      imageUrl: "/home/animation-img/portrait-man-cartoon-style.jpg",
-      title: "2d animation",
-      url:"/service/2danimation"
-    },
-    {
-      imageUrl: "/home/animation-img/portrait-man-cartoon-style.jpg",
-      title: "3d animation",
-      url:"/service/3danimation"
-    },
-    {
-      imageUrl: "/home/animation-img/3d product.jpeg",
-      title: "3d product video",
-      url:"/service/3danimation"
-    },
-    {
-      imageUrl: "/home/animation-img/motion graphic.jpg",
-      title: "explainer video",
-      url:"/service/3danimation"
-    },
-    {
-      imageUrl: "/home/animation-img/portrait-man-cartoon-style.jpg",
-      title: "motion graphic videos",
-      url:"/service/3danimation"
-    },
-    {
-      imageUrl: "/home/animation-img/portrait-man-cartoon-style.jpg",
-      title: "whiteboard animation",
-      url:"/service/3danimation"
-    },
-    {
-      imageUrl: "/home/animation-img/portrait-man-cartoon-style.jpg",
-      title: "business promotional videos",
-      url:"/service/3danimation"
-    },
-    {
-      imageUrl: "/home/animation-img/E-Learning.jpg",
-      title: "e-learning videos",
-      url:"/service/3danimation"
-    },
-    {
-      imageUrl: "/home/animation-img/design.jpg",
-      title: "design services",
-      url:"/service/3danimation"
-    },
-  ];
+  const data = db.home;
   return (
     <div className="wrapper home-section">
       <div className="container">
-        <h2>Animation Video Services</h2>
+        <h2>ANIMATION VIDEO SERVICES</h2>
         <h3>
-          <ToggleText
-            text="In publishing and graphic design, Lorem ipsum is a placeholder text
-          commonly used to demonstrate the visual form of a document or a
-          typeface without relying on meaningful content. Lorem ipsum may be
-          used as a placeholder before the final copy is available."
-            maxLength={152}
-          />
+          Bring your ideas to life with our professional animation services! Whether it’s 2D, 3D, or motion graphics, we deliver visually stunning and engaging content that resonates with your audience. Let us help you tell your story in a way that stands out!
         </h3>
         <div className="sections">
           {data.map((x, i) => (
